@@ -1,0 +1,7 @@
+[
+    {"id": "CLM-1001", "policy_number": "PN-45001", "vehicle_type": "Car", "claim_amount": 50000, "documents_submitted": ["FIR", "Photos"], "status": "Pending"},
+    {"id": "CLM-1002", "policy_number": "PN-45002", "vehicle_type": "Bike", "claim_amount": 60000, "documents_submitted": ["FIR"], "status": "Pending"},
+    {"id": "CLM-1003", "policy_number": "PN-45003", "vehicle_type": "Car", "claim_amount": 70000, "documents_submitted": ["FIR", "Photos", "Repair Estimate"], "status": "Pending"},
+    {"id": "CLM-1004", "policy_number": "PN-99999", "vehicle_type": "Car", "claim_amount": 30000, "documents_submitted": ["FIR"], "status": "Pending"}
+  ]
+  

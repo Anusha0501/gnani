@@ -1,0 +1,6 @@
+[
+    {"policy_number": "PN-45001", "holder_name": "Anusha Singh", "vehicle_type": "Car", "valid_till": "2026-03-31", "coverage_amount": 100000},
+    {"policy_number": "PN-45002", "holder_name": "Ravi Kumar", "vehicle_type": "Bike", "valid_till": "2025-12-31", "coverage_amount": 50000},
+    {"policy_number": "PN-45003", "holder_name": "Priya Mehta", "vehicle_type": "Car", "valid_till": "2025-11-30", "coverage_amount": 75000}
+  ]
+  
