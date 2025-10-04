@@ -1,4 +1,4 @@
-# **ClaimSwift** – Accelerating Motor Insurance Approvals with Agentic AI
+# **ClaimSwift** – Accelerating Motor Insurance Approvals with Agentic AI 🚗
 
 <p align="center">
   <img width="500" height="500" alt="ClaimSwift Logo_ Modern, Bold, Streamlined" src="https://github.com/user-attachments/assets/df11e22d-a461-4970-848e-99edb22c0076"/>
