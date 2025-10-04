@@ -1,36 +1,79 @@
+# **ClaimSwift** – Accelerating Motor Insurance Approvals with Agentic AI
 
-ClaimSwift: Faster Motor Insurance Approvals with Agentic AI
-ClaimSwift is an AI-powered assistant that helps customers and insurance companies handle motor accident claims faster and smarter.Today, filing a claim takes days or even weeks because of manual paperwork, assessor delays, and fraud checks. ClaimSwift cuts this down to minutes by using Agentic AI to guide customers, assess damage, and automate approvals.
+<p align="center">
+  <img width="500" height="500" alt="ClaimSwift Logo_ Modern, Bold, Streamlined" src="https://github.com/user-attachments/assets/df11e22d-a461-4970-848e-99edb22c0076"/>
+</p>
 
-Core Features (Stage 1 / Must-Have)
+## Welcome to **ClaimSwift**, an AI-powered assistant designed to expedite motor accident claims. By leveraging Agentic AI, ClaimSwift guides customers through the claim process, assesses damage, and automates approvals, reducing the traditional claim time from days to minutes.
 
-Accident Reporting Flow
+---
 
-Customer chats (or speaks) with the AI agent.
+## 🔧 Core Features
 
-Uploads photos/videos of the vehicle damage and documents (FIR, license, policy number).
+### 1. **Accident Reporting Flow**
 
-Automated Damage Assessment
+* **Interactive Chat Interface**: Users engage in a conversation with the AI agent.
+* **Multimedia Uploads**: Customers can upload photos/videos of vehicle damage and essential documents (FIR, license, policy number).
 
-AI estimates repair cost using uploaded photos.
+### 2. **Automated Damage Assessment**
 
-Compares with standard repair database for validation.
+* **AI-Powered Analysis**: The system analyzes uploaded media to assess vehicle damage.
+* **Instant Feedback**: Provides immediate insights into the extent of damage.
 
-Fraud Detection & Risk Scoring
+### 3. **Automated Approval Workflow**
 
-Checks for duplicate claims, altered photos, or mismatched details.
+* **Seamless Integration**: Integrates with insurance company databases for swift claim approvals.
+* **Real-Time Updates**: Keeps users informed about the status of their claims.
 
-Flags risky claims, escalates to human adjustor with summary.
+---
 
-Approval Workflow Automation
+## 🛠️ Technologies Used
 
-Low-risk claims: auto-approval in minutes.
+* **Python**: Backend development and AI model implementation.
+* **Flask**: Web framework for building the application.
+* **TensorFlow / PyTorch**: Machine learning frameworks for damage assessment models.
+* **HTML/CSS/JavaScript**: Frontend development for user interface.
+* **SQLite**: Database management for storing user data and claim information.
 
-Medium/High-risk claims: sent to human reviewer.
+---
 
-Notifications & Integration
+## 🚀 Getting Started
 
-Customer receives updates via chat/SMS/email.
+### Prerequisites
 
-Approved claims forwarded to nearest authorized garage automatically.
+Ensure you have the following installed:
 
+* Python 3.8+
+* pip
+
+### Installation Steps
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/Anusha0501/gnani.git
+   cd gnani
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Application**
+
+   ```bash
+   python app.py
+   ```
+
+4. **Access the Application**
+   Open your browser and navigate to `http://localhost:5000` to interact with ClaimSwift.
+
+---
+
+## 📸 Screenshots
+
+![ClaimSwift Interface](https://via.placeholder.com/800x400.png?text=ClaimSwift+Chat+Interface)
+
+*Interactive chat interface guiding users through the claim process.*
