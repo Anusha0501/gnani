@@ -1,37 +1,33 @@
 # CLAIMSWIFT – AGENTIC AI KNOWLEDGE BASE
 Comprehensive Reference for Policy Validation, Claim Processing & Fraud Detection
 
----
+--- POLICY TERMS AND COVERAGE ---
 
-## 1. POLICY TERMS AND COVERAGE
-
-### 1.1 Policy Validity
-- A claim is valid only if the incident date is within the policy validity period.
-- Policy must not be expired or suspended at the time of incident.
+Policy Validity:
+- Claim valid only if incident date is within policy period.
+- Policy must not be expired or suspended at incident time.
 - Claims must be filed within 30 days of the incident.
 
-### 1.2 Coverage Types
-- **Comprehensive Policy:** Covers third-party + own vehicle damage.
-- **Third-Party Policy:** Covers only third-party injuries or damages.
-- **Add-ons:** Zero Depreciation, Engine Protection, Roadside Assistance.
+Coverage Types:
+- Comprehensive Policy: Covers third-party + own vehicle damage.
+- Third-Party Policy: Covers only third-party injuries or damages.
+- Add-ons: Zero Depreciation, Engine Protection, Roadside Assistance.
 
-### 1.3 Exclusions
+Exclusions:
 - Drunk driving or unlicensed driver.
 - Vehicle used for commercial purposes if insured for private use.
 - Intentional or fraudulent damage.
 
----
+--- CLAIM PROCESSING RULES ---
 
-## 2. CLAIM PROCESSING RULES
-
-### 2.1 Required Documents
+Required Documents:
 - Valid Policy Copy
 - Driving License
 - FIR or Police Report (if applicable)
 - Repair Estimate and Invoices
 - Photos/Videos of Damage
 
-### 2.2 Processing Workflow
+Processing Workflow:
 1. Receive claim form and documents.
 2. Verify policy details from database.
 3. Validate coverage for claimed damage.
@@ -39,79 +35,100 @@ Comprehensive Reference for Policy Validation, Claim Processing & Fraud Detectio
 5. Approve or escalate based on risk score.
 6. Notify policyholder about decision.
 
-### 2.3 Approval Criteria
+Approval Criteria:
 - Claim amount ≤ Sum insured.
 - Incident date within coverage period.
 - Documents complete and valid.
 - No fraudulent patterns detected.
 
-### 2.4 Escalation Criteria
-- High claim amount (> ₹25,000)
+Escalation Criteria:
+- High claim amount (> 25000)
 - Missing documents
 - Suspicious document patterns
 - Repeat claims in < 6 months
 
----
+--- FRAUD DETECTION GUIDELINES ---
 
-## 3. FRAUD DETECTION GUIDELINES
-
-### 3.1 Behavioral Red Flags
+Behavioral Red Flags:
 - Claim filed immediately after policy purchase.
 - Multiple claims in short span.
 - Delayed claim reporting (>30 days).
 
-### 3.2 Document Red Flags
+Document Red Flags:
 - Missing or blurred images.
 - Fake or edited invoices.
 - Mismatched registration numbers.
 
-### 3.3 Financial Red Flags
+Financial Red Flags:
 - Claimed amount > 80% of sum insured.
 - Repairs done at non-network garages.
 
-### 3.4 Image Red Flags
+Image Red Flags:
 - Same photo submitted for multiple claims.
 - Altered or inconsistent lighting/backgrounds.
 
-### 3.5 Fraud Risk Scoring
-| Risk Range | Level | Action |
-|-------------|--------|---------|
-| 0–30 | Low | Auto Approve |
-| 31–60 | Medium | Manual Review |
-| 61–100 | High | Reject or Escalate |
+Fraud Risk Scoring:
+- 0-30: Low risk → Auto Approve
+- 31-60: Medium risk → Manual Review
+- 61-100: High risk → Reject or Escalate
 
----
+--- POLICY DATABASE (SYNTHETIC SAMPLE) ---
 
-## 4. POLICY DATABASE (SYNTHETIC SAMPLE)
+Policy 1:
+- Policy Number: PB12345678
+- Name: Rajesh Sharma
+- Vehicle Reg: HR26AB1234
+- Valid From: 2024-07-01
+- Valid To: 2025-06-30
+- Sum Insured: 50000
+- Policy Type: Comprehensive
 
-| Policy Number | Name | Vehicle Reg. | Valid From | Valid To | Sum Insured | Policy Type |
-|----------------|------|---------------|-------------|------------|--------------|--------------|
-| PB12345678 | Rajesh Sharma | HR26AB1234 | 2024-07-01 | 2025-06-30 | 50000 | Comprehensive |
-| PB23456789 | Neha Gupta | DL01CD4321 | 2024-06-01 | 2025-05-31 | 75000 | Third-Party |
-| PB34567890 | Aman Verma | MH12XY8765 | 2024-08-01 | 2025-07-31 | 100000 | Comprehensive |
+Policy 2:
+- Policy Number: PB23456789
+- Name: Neha Gupta
+- Vehicle Reg: DL01CD4321
+- Valid From: 2024-06-01
+- Valid To: 2025-05-31
+- Sum Insured: 75000
+- Policy Type: Third-Party
 
----
+Policy 3:
+- Policy Number: PB34567890
+- Name: Aman Verma
+- Vehicle Reg: MH12XY8765
+- Valid From: 2024-08-01
+- Valid To: 2025-07-31
+- Sum Insured: 100000
+- Policy Type: Comprehensive
 
-## 5. FRAUD EXAMPLES FOR TRAINING
+--- FRAUD EXAMPLES FOR TRAINING ---
 
-| Claim ID | Risk Score | Description |
-|-----------|-------------|--------------|
-| CLM001 | 25 | Normal low-amount claim, valid docs |
-| CLM002 | 65 | Duplicate image in prior claim |
-| CLM003 | 85 | Fake invoice detected |
-| CLM004 | 45 | Late submission with missing FIR |
+Claim 1:
+- Claim ID: CLM001
+- Risk Score: 25
+- Description: Normal low-amount claim, valid docs
 
----
+Claim 2:
+- Claim ID: CLM002
+- Risk Score: 65
+- Description: Duplicate image in prior claim
 
-## 6. RESPONSE GUIDELINES FOR AI AGENT
+Claim 3:
+- Claim ID: CLM003
+- Risk Score: 85
+- Description: Fake invoice detected
 
-When responding to customer or insurer queries:
+Claim 4:
+- Claim ID: CLM004
+- Risk Score: 45
+- Description: Late submission with missing FIR
+
+--- RESPONSE GUIDELINES FOR AI AGENT ---
+
 - Always validate policy first.
 - Then assess fraud likelihood using risk rules.
-- Give status: “Approved”, “Escalated”, or “Rejected”.
-- Be transparent about reason codes (e.g., “Claim exceeds coverage”).
+- Give status: Approved, Escalated, or Rejected.
+- Be transparent about reason codes (e.g., Claim exceeds coverage).
 - Provide next-step instructions for rejected or escalated claims.
 
----
-
-### END OF KNOWLEDGE BASE
+--- END OF KNOWLEDGE BASE ---
