@@ -1,0 +1,117 @@
+# CLAIMSWIFT – AGENTIC AI KNOWLEDGE BASE
+Comprehensive Reference for Policy Validation, Claim Processing & Fraud Detection
+
+---
+
+## 1. POLICY TERMS AND COVERAGE
+
+### 1.1 Policy Validity
+- A claim is valid only if the incident date is within the policy validity period.
+- Policy must not be expired or suspended at the time of incident.
+- Claims must be filed within 30 days of the incident.
+
+### 1.2 Coverage Types
+- **Comprehensive Policy:** Covers third-party + own vehicle damage.
+- **Third-Party Policy:** Covers only third-party injuries or damages.
+- **Add-ons:** Zero Depreciation, Engine Protection, Roadside Assistance.
+
+### 1.3 Exclusions
+- Drunk driving or unlicensed driver.
+- Vehicle used for commercial purposes if insured for private use.
+- Intentional or fraudulent damage.
+
+---
+
+## 2. CLAIM PROCESSING RULES
+
+### 2.1 Required Documents
+- Valid Policy Copy
+- Driving License
+- FIR or Police Report (if applicable)
+- Repair Estimate and Invoices
+- Photos/Videos of Damage
+
+### 2.2 Processing Workflow
+1. Receive claim form and documents.
+2. Verify policy details from database.
+3. Validate coverage for claimed damage.
+4. Perform fraud screening.
+5. Approve or escalate based on risk score.
+6. Notify policyholder about decision.
+
+### 2.3 Approval Criteria
+- Claim amount ≤ Sum insured.
+- Incident date within coverage period.
+- Documents complete and valid.
+- No fraudulent patterns detected.
+
+### 2.4 Escalation Criteria
+- High claim amount (> ₹25,000)
+- Missing documents
+- Suspicious document patterns
+- Repeat claims in < 6 months
+
+---
+
+## 3. FRAUD DETECTION GUIDELINES
+
+### 3.1 Behavioral Red Flags
+- Claim filed immediately after policy purchase.
+- Multiple claims in short span.
+- Delayed claim reporting (>30 days).
+
+### 3.2 Document Red Flags
+- Missing or blurred images.
+- Fake or edited invoices.
+- Mismatched registration numbers.
+
+### 3.3 Financial Red Flags
+- Claimed amount > 80% of sum insured.
+- Repairs done at non-network garages.
+
+### 3.4 Image Red Flags
+- Same photo submitted for multiple claims.
+- Altered or inconsistent lighting/backgrounds.
+
+### 3.5 Fraud Risk Scoring
+| Risk Range | Level | Action |
+|-------------|--------|---------|
+| 0–30 | Low | Auto Approve |
+| 31–60 | Medium | Manual Review |
+| 61–100 | High | Reject or Escalate |
+
+---
+
+## 4. POLICY DATABASE (SYNTHETIC SAMPLE)
+
+| Policy Number | Name | Vehicle Reg. | Valid From | Valid To | Sum Insured | Policy Type |
+|----------------|------|---------------|-------------|------------|--------------|--------------|
+| PB12345678 | Rajesh Sharma | HR26AB1234 | 2024-07-01 | 2025-06-30 | 50000 | Comprehensive |
+| PB23456789 | Neha Gupta | DL01CD4321 | 2024-06-01 | 2025-05-31 | 75000 | Third-Party |
+| PB34567890 | Aman Verma | MH12XY8765 | 2024-08-01 | 2025-07-31 | 100000 | Comprehensive |
+
+---
+
+## 5. FRAUD EXAMPLES FOR TRAINING
+
+| Claim ID | Risk Score | Description |
+|-----------|-------------|--------------|
+| CLM001 | 25 | Normal low-amount claim, valid docs |
+| CLM002 | 65 | Duplicate image in prior claim |
+| CLM003 | 85 | Fake invoice detected |
+| CLM004 | 45 | Late submission with missing FIR |
+
+---
+
+## 6. RESPONSE GUIDELINES FOR AI AGENT
+
+When responding to customer or insurer queries:
+- Always validate policy first.
+- Then assess fraud likelihood using risk rules.
+- Give status: “Approved”, “Escalated”, or “Rejected”.
+- Be transparent about reason codes (e.g., “Claim exceeds coverage”).
+- Provide next-step instructions for rejected or escalated claims.
+
+---
+
+### END OF KNOWLEDGE BASE
