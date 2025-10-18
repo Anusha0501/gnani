@@ -1,0 +1,131 @@
+{
+  "policy_terms": {
+    "validity": [
+      "Claim valid only if incident date is within policy period",
+      "Policy must not be expired or suspended at incident time",
+      "Claims must be filed within 30 days of the incident"
+    ],
+    "coverage_types": [
+      "Comprehensive Policy: Covers third-party + own vehicle damage",
+      "Third-Party Policy: Covers only third-party injuries or damages",
+      "Add-ons: Zero Depreciation, Engine Protection, Roadside Assistance"
+    ],
+    "exclusions": [
+      "Drunk driving or unlicensed driver",
+      "Vehicle used for commercial purposes if insured for private use",
+      "Intentional or fraudulent damage"
+    ]
+  },
+  "claim_processing_rules": {
+    "required_documents": [
+      "Valid Policy Copy",
+      "Driving License",
+      "FIR or Police Report (if applicable)",
+      "Repair Estimate and Invoices",
+      "Photos/Videos of Damage"
+    ],
+    "processing_workflow": [
+      "Receive claim form and documents",
+      "Verify policy details from database",
+      "Validate coverage for claimed damage",
+      "Perform fraud screening",
+      "Approve or escalate based on risk score",
+      "Notify policyholder about decision"
+    ],
+    "approval_criteria": [
+      "Claim amount ≤ Sum insured",
+      "Incident date within coverage period",
+      "Documents complete and valid",
+      "No fraudulent patterns detected"
+    ],
+    "escalation_criteria": [
+      "High claim amount (> 25000)",
+      "Missing documents",
+      "Suspicious document patterns",
+      "Repeat claims in < 6 months"
+    ]
+  },
+  "fraud_detection_guidelines": {
+    "behavioral_red_flags": [
+      "Claim filed immediately after policy purchase",
+      "Multiple claims in short span",
+      "Delayed claim reporting (>30 days)"
+    ],
+    "document_red_flags": [
+      "Missing or blurred images",
+      "Fake or edited invoices",
+      "Mismatched registration numbers"
+    ],
+    "financial_red_flags": [
+      "Claimed amount > 80% of sum insured",
+      "Repairs done at non-network garages"
+    ],
+    "image_red_flags": [
+      "Same photo submitted for multiple claims",
+      "Altered or inconsistent lighting/backgrounds"
+    ],
+    "fraud_risk_scoring": [
+      {"range": "0-30", "level": "Low", "action": "Auto Approve"},
+      {"range": "31-60", "level": "Medium", "action": "Manual Review"},
+      {"range": "61-100", "level": "High", "action": "Reject or Escalate"}
+    ]
+  },
+  "policy_database": [
+    {
+      "policy_number": "PB12345678",
+      "name": "Rajesh Sharma",
+      "vehicle_reg": "HR26AB1234",
+      "valid_from": "2024-07-01",
+      "valid_to": "2025-06-30",
+      "sum_insured": 50000,
+      "policy_type": "Comprehensive"
+    },
+    {
+      "policy_number": "PB23456789",
+      "name": "Neha Gupta",
+      "vehicle_reg": "DL01CD4321",
+      "valid_from": "2024-06-01",
+      "valid_to": "2025-05-31",
+      "sum_insured": 75000,
+      "policy_type": "Third-Party"
+    },
+    {
+      "policy_number": "PB34567890",
+      "name": "Aman Verma",
+      "vehicle_reg": "MH12XY8765",
+      "valid_from": "2024-08-01",
+      "valid_to": "2025-07-31",
+      "sum_insured": 100000,
+      "policy_type": "Comprehensive"
+    }
+  ],
+  "fraud_training_examples": [
+    {
+      "claim_id": "CLM001",
+      "risk_score": 25,
+      "description": "Normal low-amount claim, valid docs"
+    },
+    {
+      "claim_id": "CLM002",
+      "risk_score": 65,
+      "description": "Duplicate image in prior claim"
+    },
+    {
+      "claim_id": "CLM003",
+      "risk_score": 85,
+      "description": "Fake invoice detected"
+    },
+    {
+      "claim_id": "CLM004",
+      "risk_score": 45,
+      "description": "Late submission with missing FIR"
+    }
+  ],
+  "response_guidelines": [
+    "Always validate policy first",
+    "Then assess fraud likelihood using risk rules",
+    "Give status: Approved, Escalated, or Rejected",
+    "Be transparent about reason codes (e.g., Claim exceeds coverage)",
+    "Provide next-step instructions for rejected or escalated claims"
+  ]
+}
