@@ -141,7 +141,9 @@ A huge thank you to:
 ---
 
 📊 Check out the Persona Canvas here: [https://lnkd.in/g_9HqQnC](https://lnkd.in/g_9HqQnC)
+
 📑 Presentation: [https://lnkd.in/gbHYXxRF](https://lnkd.in/gbHYXxRF)
+
 💻 GitHub Repo: [https://lnkd.in/gBArP9zV](https://lnkd.in/gBArP9zV)
 
 ## 🏁 Conclusion
