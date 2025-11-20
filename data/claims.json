@@ -1,7 +1,10 @@
 [
-    {"id": "CLM-1001", "policy_number": "PN-45001", "vehicle_type": "Car", "claim_amount": 50000, "documents_submitted": ["FIR", "Photos"], "status": "Pending"},
-    {"id": "CLM-1002", "policy_number": "PN-45002", "vehicle_type": "Bike", "claim_amount": 60000, "documents_submitted": ["FIR"], "status": "Pending"},
-    {"id": "CLM-1003", "policy_number": "PN-45003", "vehicle_type": "Car", "claim_amount": 70000, "documents_submitted": ["FIR", "Photos", "Repair Estimate"], "status": "Pending"},
-    {"id": "CLM-1004", "policy_number": "PN-99999", "vehicle_type": "Car", "claim_amount": 30000, "documents_submitted": ["FIR"], "status": "Pending"}
-  ]
-  
+  {
+    "claim_id": "C1001",
+    "policy_id": "POL1001",
+    "vehicle_number": "KA05MU1234",
+    "claim_amount": 45000,
+    "fraud_flag": false,
+    "timestamp": "2025-10-12T09:21:00"
+  }
+]

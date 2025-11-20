@@ -1,7 +1,0 @@
-[Claim Intake Agent]
-       │
-       ▼
-[Validation Agent] ↔ [Damage Estimation Agent]
-       │                   │
-       ▼                   ▼
-[Claim Decision Agent] → [Reviewer Agent] → [Settlement Agent]

@@ -1,5 +1,20 @@
 [
-    {"agent_id": "AG-01", "name": "Ravi Kumar", "approval_limit": 50000},
-    {"agent_id": "AG-02", "name": "Asha Verma", "approval_limit": 75000}
-  ]
-  
+  {
+    "agent_id": "A001",
+    "name": "Damage Assessment Agent",
+    "role": "Evaluate severity of vehicle damage",
+    "status": "active"
+  },
+  {
+    "agent_id": "A002",
+    "name": "Policy Validator Agent",
+    "role": "Check coverage & policy limits",
+    "status": "active"
+  },
+  {
+    "agent_id": "A003",
+    "name": "Fraud Detection Agent",
+    "role": "Detect suspicious claims",
+    "status": "active"
+  }
+]
